@@ -1,81 +1,100 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Para Aline ❤️</title>
-<style>
-body{
+<title>Para Aline ❤️</title><style>
+*{
     margin:0;
-    font-family: Georgia, serif;
-    color:white;
-    background:#111;
+    padding:0;
+    box-sizing:border-box;
 }
-.hero{
+
+body{
+    font-family: 'Georgia', serif;
     min-height:100vh;
-    background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.65)), url('arte_bombeiros.png');
-    background-size: cover;
-    background-position: center;
+    background:
+        linear-gradient(rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)),
+        url('arte_bombeiros.png');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
     display:flex;
-    align-items:center;
     justify-content:center;
-    text-align:center;
+    align-items:center;
     padding:20px;
 }
-.hero h1{
-    font-size:3rem;
-    margin:0;
-}
-.hero p{
-    font-size:1.2rem;
-}
-.carta{
-    max-width:900px;
-    margin:40px auto;
-    background:rgba(255,255,255,.95);
-    color:#222;
-    border-radius:18px;
+
+.container{
+    max-width:800px;
+    background:rgba(0,0,0,0.55);
+    backdrop-filter:blur(3px);
+    border-radius:20px;
     padding:40px;
-    line-height:1.8;
-    box-shadow:0 0 20px rgba(0,0,0,.3);
-}
-.assinatura{
+    color:white;
     text-align:center;
-    margin-top:30px;
+    box-shadow:0 0 25px rgba(0,0,0,0.4);
 }
-</style>
-</head>
-<body>
 
-<section class="hero">
-    <div>
-        <h1>Para Aline ❤️</h1>
-        <p>Role para baixo...</p>
-    </div>
-</section>
+h1{
+    font-size:2.5rem;
+    margin-bottom:25px;
+}
 
-<section class="carta">
-<h2>Minha pessoa favorita</h2>
+.poema{
+    white-space:pre-line;
+    font-size:1.2rem;
+    line-height:1.9;
+}
 
-<p>Aline,</p>
+.assinatura{
+    margin-top:30px;
+    font-size:1.3rem;
+    font-weight:bold;
+}
 
-<p>Você chegou aos poucos, mas mudou tudo ao seu redor.
-Mudou meus dias, meus pensamentos e até a forma como eu enxergo as coisas simples da vida. Desde que você entrou nela, meus dias ficaram mais leves, meus sorrisos mais sinceros e meu coração encontrou um motivo a mais para ser feliz.</p>
+@media(max-width:768px){
+    .container{
+        padding:25px;
+    }
 
-<p>Você tem esse jeito único de me fazer sentir melhor, mesmo quando o dia não foi dos melhores. Só de falar com você, parece que o mundo desacelera e as preocupações ficam menores. Sua presença traz paz, conforto e uma felicidade que eu nem sabia que estava procurando.</p>
+    h1{
+        font-size:2rem;
+    }
 
-<p>A cada dia que passa, eu admiro mais a mulher incrível que você é. E, junto com essa admiração, cresce também o amor que sinto por você. Um amor que não nasceu de grandes promessas, mas de pequenos momentos, conversas, risadas e da vontade constante de ter você por perto.</p>
+    .poema{
+        font-size:1.05rem;
+    }
+}
+</style></head><body><div class="container">
+    <h1>Para Aline ❤️</h1><div class="poema">
 
-<p>Se hoje sou uma versão melhor de mim mesmo, muito disso é porque você me inspira a ser alguém melhor. E entre todas as certezas que a vida pode me dar, uma delas é que eu amo você.</p>
+A cada dia que passa, tenho mais certeza
+de que você se tornou minha pessoa favorita.
 
-<p>Eu amo o seu jeito, a sua força, o seu sorriso e a forma como você ilumina os meus dias sem nem perceber.</p>
+Seu sorriso ilumina meus dias,
+sua presença transforma momentos simples
+em lembranças que quero guardar para sempre.
 
-<p><strong>Eu te amo, Aline. Hoje, amanhã e em cada novo dia que eu tiver a sorte de viver ao seu lado.</strong></p>
+Você me inspira a ser melhor,
+a buscar minha melhor versão,
+não porque me pede isso,
+mas porque amar você me faz querer crescer.
+
+Entre tantos caminhos,
+foi o seu que eu quis seguir.
+
+E se existe algo do qual tenho certeza,
+é que meu coração escolhe você,
+hoje, amanhã e em todos os dias que vierem.
+
+Eu te amo.
+</div>
 
 <div class="assinatura">
-<h3>Com amor,<br>Pedro ❤️</h3>
+    Com amor,<br>
+    Pedro ❤️
 </div>
-</section>
 
-</body>
+</div></body>
 </html>
