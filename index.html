@@ -1,23 +1,344 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Para Aline ❤️</title><style>
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+
+<title>Nossa História ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
+body{
+    background:#121212;
+    color:white;
+    overflow:hidden;
 }
-</style></head><body>
-    <img src="arte_bombeiros.png" alt="Para Aline ❤️">
+
+.screen{
+    width:100vw;
+    height:100vh;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    text-align:center;
+}
+
+.active{
+    display:flex;
+}
+
+.album{
+    width:280px;
+    height:280px;
+    border-radius:20px;
+    object-fit:cover;
+    box-shadow:0 0 25px rgba(0,0,0,.5);
+    margin-bottom:25px;
+}
+
+.playlist{
+    font-size:2rem;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.author{
+    color:#b3b3b3;
+    margin-bottom:30px;
+}
+
+.spotify-btn{
+    background:#1DB954;
+    border:none;
+    color:white;
+    padding:16px 40px;
+    border-radius:40px;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.spotify-btn:hover{
+    transform:scale(1.05);
+}
+
+.track{
+    color:#1DB954;
+    font-size:0.9rem;
+    margin-bottom:15px;
+}
+
+.title{
+    font-size:2rem;
+    margin-bottom:25px;
+}
+
+.poem{
+    max-width:700px;
+    line-height:1.8;
+    white-space:pre-line;
+    margin-bottom:30px;
+}
+
+.progress{
+    width:80%;
+    max-width:500px;
+    height:6px;
+    background:#333;
+    border-radius:10px;
+    margin-bottom:25px;
+}
+
+.progress-fill{
+    height:100%;
+    background:#1DB954;
+    width:100%;
+    border-radius:10px;
+}
+
+.final-message{
+    max-width:700px;
+    line-height:2;
+}
+
+.heart{
+    color:#1DB954;
+    font-size:3rem;
+    margin-bottom:20px;
+}
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<section class="screen active" id="screen0">
+
+<img src="casal.png" class="album">
+
+<div class="playlist">Nossa História ❤️</div>
+<div class="author">Pedro & Aline</div>
+
+<button class="spotify-btn" onclick="nextScreen()">
+▶ INICIAR
+</button>
+
+</section>
+
+<!-- POESIA 1 -->
+<section class="screen" id="screen1">
+
+<div class="track">Faixa 1 de 4</div>
+<h1 class="title">Dia dos Namorados</h1>
+
+<div class="poem">
+Tudo começou em uma simples mensagem,
+resposta breve, sem imaginar.
+Que daquele pequeno instante,
+uma linda história iria começar.
+
+Entre conversas que nunca acabavam,
+fui encontrando paz no seu falar.
+E sem perceber, dia após dia,
+você se tornou meu melhor lugar.
+
+Hoje, no Dia dos Namorados,
+só quero te agradecer.
+Por alegrar meus dias mais difíceis,
+e me fazer sorrir sem perceber.
+
+Em cada pensamento, um motivo.
+Em cada sonho, o seu olhar.
+Porque amar você, meu amor,
+é a melhor forma de amar.
+</div>
+
+<div class="progress">
+<div class="progress-fill"></div>
+</div>
+
+<button class="spotify-btn" onclick="nextScreen()">
+Próxima Faixa
+</button>
+
+</section>
+
+<!-- POESIA 2 -->
+<section class="screen" id="screen2">
+
+<div class="track">Faixa 2 de 4</div>
+<h1 class="title">Mulher Extraordinária</h1>
+
+<div class="poem">
+Existe uma força dentro de você
+que poucos conseguem enxergar.
+Mas eu a vejo em cada batalha,
+em cada vez que você insiste em continuar.
+
+Você carrega coragem no sorriso,
+determinação no coração.
+E mesmo enfrentando tempestades,
+ainda espalha luz por onde põe os pés no chão.
+
+Seu jeito torna tudo mais leve,
+seu abraço acalma qualquer dor.
+E quanto mais eu conheço você,
+mais admiro quem você se tornou.
+
+Mulher incrível, mulher guerreira,
+dona de uma beleza sem igual.
+Mas o que mais me encanta em você
+é esse coração tão especial.
+</div>
+
+<div class="progress">
+<div class="progress-fill"></div>
+</div>
+
+<button class="spotify-btn" onclick="nextScreen()">
+Próxima Faixa
+</button>
+
+</section>
+
+<!-- POESIA 3 -->
+<section class="screen" id="screen3">
+
+<div class="track">Faixa 3 de 4</div>
+<h1 class="title">Meu Lugar Favorito</h1>
+
+<div class="poem">
+Se me perguntassem onde encontro paz,
+eu não responderia uma cidade ou um lugar.
+Eu diria apenas o seu nome,
+porque é em você que gosto de estar.
+
+Meu lugar favorito é seu abraço,
+é seu sorriso no fim do dia.
+É ouvir sua voz contando qualquer coisa,
+transformando momentos simples em alegria.
+
+Quando o mundo parece pesado,
+você se torna minha direção.
+E cada instante ao seu lado
+encontra espaço no meu coração.
+
+Porque entre tantos caminhos possíveis,
+existe um que eu quero seguir.
+Aquele que me leva até você,
+todos os dias da minha vida.
+</div>
+
+<div class="progress">
+<div class="progress-fill"></div>
+</div>
+
+<button class="spotify-btn" onclick="nextScreen()">
+Próxima Faixa
+</button>
+
+</section>
+
+<!-- POESIA 4 -->
+<section class="screen" id="screen4">
+
+<div class="track">Faixa 4 de 4</div>
+<h1 class="title">Em Todas as Vidas</h1>
+
+<div class="poem">
+Se eu pudesse voltar no tempo,
+viver tudo outra vez,
+procuraria você em cada esquina,
+em cada sonho que eu talvez fizesse.
+
+Porque existem pessoas que passam,
+e existem pessoas que ficam.
+Você chegou de forma simples,
+mas deixou marcas infinitas.
+
+Não sei o que o futuro reserva,
+nem tudo o que iremos viver.
+Mas sei que em cada plano que faço,
+existe espaço para você.
+
+E se a vida me desse mil escolhas,
+em mil delas eu decidiria assim:
+escolher você novamente,
+para caminhar ao meu lado até o fim.
+</div>
+
+<div class="progress">
+<div class="progress-fill"></div>
+</div>
+
+<button class="spotify-btn" onclick="nextScreen()">
+Finalizar
+</button>
+
+</section>
+
+<!-- FINAL -->
+<section class="screen" id="screen5">
+
+<img src="casal.png" class="album">
+
+<div class="heart">❤️</div>
+
+<div class="final-message">
+
+<h1>Feliz Dia dos Namorados</h1>
+
+<br>
+
+Obrigado por transformar uma simples resposta em story
+na melhor história da minha vida.
+
+<br><br>
+
+Você trouxe leveza,
+felicidade,
+amor
+e motivos para acreditar ainda mais nos dias bons.
+
+<br><br>
+
+Que esta seja apenas uma das muitas páginas
+que ainda escreveremos juntos.
+
+<br><br>
+
+<h2>Eu amo muito você ❤️</h2>
+
+<br>
+
+<strong>Com amor, Pedro.</strong>
+
+</div>
+
+</section>
+
+<script>
+
+let current = 0;
+
+function nextScreen(){
+
+document.getElementById(`screen${current}`).classList.remove('active');
+
+current++;
+
+document.getElementById(`screen${current}`).classList.add('active');
+
+}
+
+</script>
+
 </body>
-</html>
+    </html>
